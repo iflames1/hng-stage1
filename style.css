@@ -47,7 +47,7 @@ section {
 }
 
 section img {
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 article {
@@ -65,6 +65,9 @@ ol {
 ol > li {
   counter-increment: item;
   margin-bottom: 10px;
+}
+ol > li > strong {
+  font-size: larger;
 }
 ol > li:before {
   content: counters(item, ".") " ";
