@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>My Goals</title>
   </head>
   <body>
     <header>
@@ -14,13 +14,9 @@
       <section class="info">
         <img testid="slackProfilePicture" src="/dp.jpg" />
         <h2 data-testid="slackDisplayName">Flames</h2>
-        <a href="mailto:isaacomenuche">
+        <a href="mailto:isaacomenuche" target="_blank">
           <span data-testid="slackEmail">isaacomenuche@gmail.com</span>
         </a>
-        <div>
-          <p>Current time: <span data-testid="currentTimeUTC">time</span></p>
-          <p>Current day: <span data-testid="currentDay">day</span></p>
-        </div>
       </section>
       <article>
         <h2>My Goals for the Next Two Years</h2>
@@ -61,7 +57,7 @@
             <ul>
               <li>
                 <strong>Business Planning:</strong> I will create a detailed
-                business plan outlining my company&U+2019s vision, mission, and
+                business plan outlining my company&#39;s vision, mission, and
                 goals.
               </li>
               <li>
@@ -71,7 +67,7 @@
               </li>
               <li>
                 <strong>Initial Projects:</strong> Launching initial projects
-                that showcase my company&U+2019s capabilities and attract
+                that showcase my company&#39;s capabilities and attract
                 potential clients and investors.
               </li>
             </ul>
@@ -106,11 +102,24 @@
           </li>
         </ol>
       </article>
+      <p class="time">
+        <span id="current-day" data-testid="currentDay"> </span>&#xa0;
+        <span id="current-time" data-testid="currentTimeUTC"></span>
+      </p>
     </main>
     <footer>
-      <a href="hng.tech/learn"></a>
-      <a href="keyword.dog"></a>
-      <a href="scrapeanyweb.site"></a>
+      <a data-testid="hngLink" target="_blank" href="https://hng.tech/learn">
+        HNG Tech</a
+      >
+      <a data-testid="keywordLink" target="_blank" href="https://keyword.dog"
+        >Keyword</a
+      >
+      <a
+        data-testid="scrapeanywebLink"
+        target="_blank"
+        href="https://scrapeanyweb.site"
+        >Scrape Any</a
+      >
     </footer>
   </body>
   <script src="script.js"></script>

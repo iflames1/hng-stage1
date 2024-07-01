@@ -8,7 +8,7 @@
 
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  max-width: 1440px;
+  max-width: 768px;
   margin: 0 auto;
 }
 
@@ -24,9 +24,6 @@ li {
 p {
   color: #808080;
 }
-strong {
-  color: #1a1a1a;
-}
 a {
   color: #666666;
   text-decoration: none;
@@ -40,12 +37,25 @@ header {
   padding: 20px 0;
 }
 
-.info {
+section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-bottom: 30px;
+}
+
+section img {
+  margin-bottom: 20px;
+}
+
+article {
+  padding: 0 10px 20px;
+}
+
+article h2 {
+  margin-bottom: 20px;
 }
 
 ol {
@@ -62,9 +72,23 @@ ol > li:before {
   margin-right: 5px;
 }
 ul {
-  list-style-type: disc;
+  list-style-type: none;
   margin-left: 20px;
+}
+ul li {
+  padding: 5px;
 }
 li ul li {
   margin-bottom: 5px;
+}
+
+.time {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 20px 20px;
 }
